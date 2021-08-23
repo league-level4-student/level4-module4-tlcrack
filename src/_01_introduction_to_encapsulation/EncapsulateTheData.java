@@ -56,5 +56,17 @@ public class EncapsulateTheData {
 			degreesTurned=f;
 		}
 	}
+	void setNomenclature(String s) {
+		if(s.equals("")) {
+			s=" ";
+		}
+		nomenclature=s;
+	}
+	void setMemberObj(Object o) {
+		if(o instanceof String) {
+			o = new Object();
+		}
+		memberObj=o;
+	}
 	
 }
